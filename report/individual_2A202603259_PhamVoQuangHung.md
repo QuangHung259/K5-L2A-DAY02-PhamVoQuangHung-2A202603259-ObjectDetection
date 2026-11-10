@@ -4,22 +4,22 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
-- Link Colab đã chạy:
+- Họ tên:Phạm Võ Quang Hưng
+- MSSV: 2A202603259
+- Email:quanghungphamvo@gmail.com
+- Lớp: 2B
+- Link repo bài làm: https://github.com/QuangHung259/K5-L2A-DAY02-PhamVoQuangHung-2A202603259-ObjectDetection
+- Link Colab đã chạy: https://colab.research.google.com/drive/1k58yBMduh0r-_smS46p617w6OsinBn5e?usp=sharing
 
 ## 2. Schema và mini guideline
 
-Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ hồ đã quyết định, cách áp dụng schema và phần cần giảng viên làm rõ.
+Dẫn tới [GUIDELINE_MINI.md](https://github.com/QuangHung259/K5-L2A-DAY02-PhamVoQuangHung-2A202603259-ObjectDetection/blob/main/GUIDELINE_MINI.md). Tóm tắt ba ca mơ hồ đã quyết định, cách áp dụng schema và phần cần giảng viên làm rõ.
 
 ## 3. Annotation và self-QC
 
-- Số file nhãn train:
+- Số file nhãn train: 50
 - Kết quả checker và lỗi đã xử lý:
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt:
+- Danh sách ít nhất 10 ảnh đã rà bằng mắt: drive_001.jpg, drive_002.jpg, drive_003.jpg, drive_004.jpg, drive_005.jpg, drive_006.jpg, drive_007.jpg, drive_008.jpg, drive_009.jpg, drive_0010.jpg
 - Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
 - Commit khóa nhãn ban đầu:
 
@@ -27,14 +27,14 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 
 | Chỉ số | Trước sửa | Sau sửa nếu có |
 |---|---:|---:|
-| TP | | |
-| FP | | |
-| FN | | |
-| Precision | | |
-| Recall | | |
-| F1 | | |
-| mean_iou_of_matches | | |
-| passed | | |
+| TP |439 | |
+| FP |420 | |
+| FN |214 | |
+| Precision |0.5111 | |
+| Recall |0.6723 | |
+| F1 |0.5807 | |
+| mean_iou_of_matches |0.8295 | |
+| passed |false | |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
@@ -46,10 +46,10 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 
 | Chỉ số trên 10 ảnh eval | Giá trị |
 |---|---:|
-| Precision | |
-| Recall | |
-| mAP50 | |
-| mAP50–95 | |
+| Precision |0.18277673848474232 |
+| Recall | 0.3119919067017738|
+| mAP50 | 0.2876445145316125|
+| mAP50–95 | 0.2003699371515734|
 
 Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
 
@@ -64,7 +64,7 @@ Trả lời bốn câu hỏi cuối notebook:
 
 | Bước/thời điểm | Lỗi quan sát | Cách đã thử | Kết quả/còn thiếu |
 |---|---|---|---|
-| | | | |
+| chạy gold_train_labels| nhiều hình còn thiếu box đã gắn và nhiều hình còn dư box | dán thêm những hình còn thiếu | không thực hiện được tất cả các hình còn thiếu box hoặc dư |
 
 ## 7. Tự đánh giá theo rubric
 
